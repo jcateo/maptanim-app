@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Maptanim",
+    "slug": "maptanim-mobile",
+    "version": "1.0.0",
+    "sdkVersion": "54.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "usesIcloudStorage": true
+    },
+    "android": {
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE", "CAMERA", "ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Maptanim to access your photos.",
+          "cameraPermission": "Allow Maptanim to access your camera."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Maptanim to access your camera."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Maptanim to access your location."
+        }
+      ]
+    ]
+  }
+}
